@@ -123,14 +123,14 @@
 						<colgroup span="2"></colgroup>
 						<tr>
 							<td rowspan="2" id = "a1"> Year</td>
-							<th colspan="2" scope="colgroup">Sold Properties</th>
-							<th colspan="2" scope="colgroup">Average selling price</th>
+							<th colspan="2" id = "a2" scope="colgroup">Sold Properties</th>
+							<th colspan="2" id = "a3" scope="colgroup">Average selling price</th>
 						</tr>
 						<tr>
-							<th scope="col">Quebec</th>
+							<th scope="col" id = "">Quebec</th>
 							<th scope="col">Toronto</th>
-							<th scope="col">Produced</th>
-							<th scope="col">Sold</th>
+							<th scope="col">Single House</th>
+							<th scope="col">Condo</th>
 						</tr>
 
 						
@@ -155,11 +155,13 @@
 					table 
 					{
 						border: 1px #666666;
+						text-align: center;
 					}
 
-					#a1
+					#a1,#a2,a3
 					{
 						background: #333333;
+						color: white;
 					}
 					
 					td 
