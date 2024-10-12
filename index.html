@@ -27,7 +27,7 @@
 
 <body>
 
-	<div role = "Search"> <!-- start of search-->
+	<div role = "Search" aria-labelledby = "wb-srch"> <!-- start of search-->
 		<div id="wb-srch" class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
 			<h2>Search</h2>
 
@@ -59,7 +59,7 @@
 			</div>
 		</div>
 
-		<div role = "Main" id="wb-sm" data-ajax-replace="../ajax/cdtsMenu-en.html" data-trgt="mb-pnl"
+		<div role = "Main" aria-label = "Main Navigation" id="wb-sm" data-ajax-replace="../ajax/cdtsMenu-en.html" data-trgt="mb-pnl"
 			class="wb-menu visible-md visible-lg wb-init wb-data-ajax-replace-inited wb-menu-inited wb-navcurr-inited"
 			typeof="SiteNavigationElement">
 			<div class="pnl-strt container nvbar">
@@ -68,13 +68,13 @@
 					<ul role="menubar" class="list-inline menu">
 						<li><a class="item" href="index-en.html" tabindex="0" aria-posinset="1" aria-setsize="7"
 								role="menuitem">Home</a></li>
-						<li><a class="item" href="internet-en.html" tabindex="-1" aria-posinset="2" aria-setsize="7"
+						<li><a class="item" href="internet-en.html" tabindex="0" aria-posinset="2" aria-setsize="7"
 								role="menuitem">Buying</a></li>
-						<li><a class="item" href="intranet-en.html" tabindex="-1" aria-posinset="3" aria-setsize="7"
+						<li><a class="item" href="intranet-en.html" tabindex="0" aria-posinset="3" aria-setsize="7"
 								role="menuitem">Selling</a></li>
 						<li><a class="item" href="faq-en.html" tabindex="-1" aria-posinset="6" aria-setsize="7"
 								role="menuitem">FAQs</a></li>
-						<li><a class="item" href="contact-en.html" tabindex="-1" aria-posinset="7" aria-setsize="7"
+						<li><a class="item" href="contact-en.html" tabindex="0" aria-posinset="7" aria-setsize="7"
 								role="menuitem">Contact us</a></li>
 					</ul>
 
@@ -90,33 +90,35 @@
 	<main property="mainContentOfPage" class="container">
 		<h1>Welcome</h1>
 		<!-- <p>Content A here</p> -->
-
-		<h1>Hi/Max Real Estate & Houses</h1>
-		<section>Buying or selling a home is likely the largest and most important transaction you’ll ever make. That’s why so many trust Hi/MAX Real Estate, which according to Canadian consumers, has been voted #1 Most Trusted Real Estate Agents in Canada six times in a row.</section>		
-		<a href="www.google.ca">Lets get started</a>
-		
-		<div class="row" role = "Complementary">
+		<section aria-labelledby="himax">
+			<h1 id = "himax">Hi/Max Real Estate & Houses</h1>
+			<p>Buying or selling a home is likely the largest and most important transaction you’ll ever make. That’s why so many trust Hi/MAX Real Estate, which according to Canadian consumers, has been voted #1 Most Trusted Real Estate Agents in Canada six times in a row.</p>		
+			<a href="www.google.ca">Lets get started</a>
+		</section>
+			
+		<div class="row" role = "Complementary" aria-label="Advertizement">
 			<div class="col-md-4 pull-right">
 				<p>Content B here</p>
-				<h2>Related resources</h2>
-				<section>It's time to sell and find the next "one". Let us help you navigate the ins & outs of your next move. </section>
-				<ul>
-					<li><a href="www.google.ca">Looking for an upgrade?</a></li>
-					<li><a href="www.google.ca">Buying tips</a></li>
-					<li><a href="www.google.ca">How much is your</a></li>
-					<li><a href="www.google.ca">current home worth?</a></li>
-				</ul>
-			
+				<section aria-labelledby = "relres">
+					<h2 id = "relres">Related resources</h2>
+					<p>It's time to sell and find the next "one". Let us help you navigate the ins & outs of your next move. </p>
+					<ul>
+						<li><a href="www.google.ca">Looking for an upgrade?</a></li>
+						<li><a href="www.google.ca">Buying tips</a></li>
+						<li><a href="www.google.ca">How much is your</a></li>
+						<li><a href="www.google.ca">current home worth?</a></li>
+					</ul>
+				</section>
+							
 			</div>
 
-			<div class="col-md-8">
+			<div class="col-md-8">	
 				<p>Content C here</p>
-				<h3>Why choosing HI/Max</h3>
-				<section>Hi/Max agents go above and beyond and always strive to be the best they can be.</section>
-				<section>HI/MAX is extremely community focused, and our agents are too!</section>
-				<h4>Stats of HI/Max</h4>
-
-				<div id = "table">
+				<section aria-labelledby = "whychoose">
+					<h3 id = "whychoose">Why choosing HI/Max</h3>
+					<p>Hi/Max agents go above and beyond and always strive to be the best they can be.</p>
+					<p>HI/MAX is extremely community focused, and our agents are too!</p>
+					<h4>Stats of HI/Max</h4>
 					<table>
 						<col>
 						<colgroup span="2"></colgroup>
@@ -147,46 +149,47 @@
 							<td id = "a24">240,000</td>
 						</tr>
 					</table> 
-				</div>
-				<style type="text/css">
-					table 
-					{
-						border: 1px #666666;
-						text-align: center;
-						color: black;
-					}
-
-					#a,#b,#c
-					{
-						text-align: center;
-						background: #333333;
-						color: white;
-					}
 					
-					td 
-					{
-						border: 1px solid black;
-					}
-					
-					th 
-					{
-						border: 1px solid black;
-						background: #a6a6a6;
-					}
-				</style>
-				
+					<style type="text/css">
+						table 
+						{
+							border: 1px #666666;
+							text-align: center;
+							color: black;
+						}
+	
+						#a,#b,#c
+						{
+							text-align: center;
+							background: #333333;
+							color: white;
+						}
+						
+						td 
+						{
+							border: 1px solid black;
+						}
+						
+						th 
+						{
+							border: 1px solid black;
+							background: #a6a6a6;
+						}
+					</style>
+				</section>	
 			</div>
 		</div>
 		<div class="clear"></div>
 		<div>Content D here</div>
+		
 		<h4>More Resources on How to Choose the Right Agent</h4>
 		<div class="row">
-			<div class="col-md-4 ">
+			<div class="col-md-4 ">		
 				<article>
 					<img src="1.png" alt=""><br>
-					<a href="www.google.ca">What Are The Risks of Selling a Home Yourself?</a>
-					<section> We’ve all seen the videos, read the stories, and gasped at the images of people who thought 
-						they could conquer a project that would have been better left to the professionals. Read more</section>
+					<a id = "" href="www.google.ca">What Are The Risks of Selling a Home Yourself?</a>
+					<p> We’ve all seen the videos, read the stories, and gasped at the images of people who thought 
+						they could conquer a project that would have been better left to the professionals. Read more</p>
 				</article>
 				<p>Content F here</p>
 			</div>
@@ -194,8 +197,8 @@
 				<article>
 					<img src="2.png" alt=""><br>
 					<a href="www.google.ca">7 Questions to Ask a Real Estate Agent Before You Commit</a>
-					<section> According to research by the National Association of Realtors, there are considerable benefits 
-						to working with a real estate agent, including higher sale prices. </section>
+					<p> According to research by the National Association of Realtors, there are considerable benefits 
+						to working with a real estate agent, including higher sale prices. </p>
 				</article>
 				<p>Content G here</p>
 
@@ -204,11 +207,10 @@
 				<article>
 					<img src="3.png" alt=""><br>
 					<a href="www.google.ca">8 Reasons to Hire an Agent When Selling Your Home</a>
-					<section>With all the many different moving parts involved in selling your home, here are eight very valid 
-						reasons to have a real estate agent on speed dial.</section>
+					<p>With all the many different moving parts involved in selling your home, here are eight very valid 
+						reasons to have a real estate agent on speed dial.</p>
 				</article>
 				<p>Content H here</p>
-
 			</div>
 		</div>
 		<div class="pagedetails">
@@ -217,7 +219,6 @@
 				<dd><time property="dateModified">2023-10-13</time></dd>
 			</dl>
 		</div>
-
 
 	</main>
 	<div role = "Contentinfo" id="wb-info" class=" wb-navcurr-inited">
